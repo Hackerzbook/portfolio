@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media769.css">
+    <link rel="stylesheet" href="css/mediaquaries.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <title>portfolio</title>
+</head>
+
+<body id="body" onload="loader()">
+    <!-- particle js -->
+    <div id="particles-js"></div>
+    <!-- particle js -->
+
+    <!-- preloader -->
+    <div class="preloader"></div>
+    <!-- preloader -->
+    <nav>
+
+        <div class="menu">
+            <ul id="ul">
+                <div class="close-menu"><i id="close-menu" class="close-menu bi bi-x"></i></div>
+                <li><a href="#">about</a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">services</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </div>
+        <div class="btn">
+            <a href="#">login in</a>
+            <a href="#">sign up</a>
+        </div>
+        <div class="humbarg-menu"><i id="humbarg" class="bi bi-list humbarg"></i></div>
+    </nav>
+    <!-- main -->
+    <section id="main">
+        <aside>
+            <a href="#"><i class="bi bi-facebook"></i><span>FACEBOOK</span></a>
+            <a href="#"><i class="bi bi-instagram"></i><span>INSTAGRAM</span></a>
+            <a href="http://wa.link/p9b1x2"><i class="bi bi-whatsapp"></i><span>WHATSAPP</span></a>
+            <a href="https://github.com/hackerzbook"><i class="bi bi-github"></i><span>GITHUB</span></a>
+        </aside>
+
+        <div class="container">
+            <div class="intro">
+                <h1>maaz <span>khan</span></h1>
+                <div class="text-anim">
+                    <h2>I am <span id="typed" class="effect"></span></h2>
+                </div>
+                <p>i am web developer over 3 years of experience. i am html, css, javascript, jQuary, node js and mongo
+                    DB developer .<a href="#">learn more</a></p>
+                <a href="#" class="hire-btn">HIRE ME</a>
+
+            </div>
+            <div class="img"><img src="images/portfolio.jpg" alt=""></div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+
+        <div class="container" data-aos="fade-up">
+
+            <div class="text">
+                <h2>ABOUT US</h2>
+                <p name="about">
+                    my name is maaz khan .i am a webdeveloper from pakistan
+                    i worked over 2 years as a programmer
+                    i am a studend of computer science . i worked in many projects
+                    i am html, css, javascript, jQuary, nodejs, reactjs, express js, and mongodb developer
+                    and i am a professional webdeveloper
+                </p>
+            </div>
+            <div class="about-image"><img src="images/app-1.jpg" alt="about-image"></div>
+        </div>
+        <div class="bio-container" data-aos="fade-up">
+            <img src="images/background.jpg" alt="">
+            <div class="text">
+                <h2>SKILLS</h2>
+                <div class="bio">
+                    <!-- progress bar -->
+                    <div class="container-progress">
+                        <div class="skill-box">
+                            <span class="title">HTML</span>
+
+                            <div class="skill-bar">
+                                <span class="skill-per html">
+                                    <span class="tooltip">90%</span>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="skill-box">
+                            <span class="title">CSS</span>
+
+                            <div class="skill-bar">
+                                <span class="skill-per css">
+                                    <span class="tooltip">70%</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="skill-box">
+                            <span class="title">JavaScript</span>
+
+                            <div class="skill-bar">
+                                <span class="skill-per javascript">
+                                    <span class="tooltip">50%</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="skill-box">
+                            <span class="title">NodeJS</span>
+
+                            <div class="skill-bar">
+                                <span class="skill-per nodejs">
+                                    <span class="tooltip">30%</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- progress bar -->
+                </div>
+            </div>
+
+        </div>
+
+        <div class="services-container" data-aos="fade-up">
+            <div class="text">
+                <h2>SERVICES</h2>
+                <div class="services">
+                    <ul>
+                        <li>we offers you frontEnd development</li>
+                        <li>we offers you backEnd development</li>
+                        <li>we also creates database</li>
+                        <li>we design ui/ux design</li>
+                    </ul>
+                </div>
+            </div>
+            <img src="images/community.jpg" alt="">
+        </div>
+
+
+    </section>
+    <footer>
+        <p>this portfolio is design by <span>maaz khan</span></p>
+    </footer>
+    <script src="assets/particles.js"></script>
+    <script src="assets/app.js"></script>
+    <script src="assets/aos.js"></script>
+    <script>AOS.init();</script>
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed("#typed", {
+            strings: [
+                'web developer',
+                'front-end developer',
+                'back-end developer',
+            ],
+            backSpeed: 50,
+            startDelay: 70,
+            loop: true,
+            typeSpeed: 50,
+            showCursor: true,
+            cursorChar: '|',
+        })
+    </script>
+</body>
+<script>let close = document.getElementById("close-menu");
+    close.addEventListener("click", function (e) {
+        document.getElementById("ul").style.right = "-100vw";
+    })
+    let humbarg = document.getElementById("humbarg");
+    humbarg.addEventListener("click", function (e) {
+
+        document.getElementById("ul").style.right = "0";
+    })
+    function loader() {
+        let loader = document.querySelector('body div.preloader');
+        loader.style.display = "none";
+    }
+</script>
+
+</html>

@@ -1,0 +1,41 @@
+@media (max-width:769px) {
+
+    html {
+        font-size: 12px;
+    }
+nav{
+    padding: 0 4vw;
+}
+    #main .container {
+        margin-right: 2vw;
+    }
+
+    #main .intro {
+        width: 50vh;
+    }
+
+    #main aside {
+        margin: 0 0 0 2vw;
+        width: 22%;
+    }
+
+    #about .container {
+        width: 90vw;
+        height: 67vh;
+    }
+
+    #about .bio-container {
+        width: 90vw;
+        height: 67vh;
+    }
+
+    #about .services-container {
+        width: 90vw;
+        height: 67vh;
+    }
+    .container-progress {
+       width: 95%;
+        margin: 0 7px;
+       }
+
+}
